@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Translator ✨</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo-row">
+          <div class="logo">Emoji Translator</div>
+          <span class="logo-badge">v1.0</span>
+        </div>
+        <p class="tagline">Turn your words into a world of emojis</p>
+      </header>
+
+      <div class="card">
+        <!-- Mode toggle -->
+        <div class="mode-row">
+          <span class="mode-label">Mode</span>
+          <div class="toggle-track" id="toggleTrack" onclick="toggleMode()">
+            <span class="toggle-opt">🔤 Word</span>
+            <span class="toggle-opt">🌈 Vibe</span>
+          </div>
+        </div>
+
+        <div class="mode-desc" id="modeDesc">
+          <span>Word Mode:</span> Each word is matched to its closest emoji.
+          Unmatched words stay as text.
+        </div>
+
+        <textarea
+          id="inputText"
+          placeholder="e.g. I love pizza and the sun…"
+        ></textarea>
+
+        <button
+          class="btn-translate"
+          id="translateBtn"
+          onclick="runTranslate()"
+        >
+          ✦ Translate
+        </button>
+
+        <!-- Output -->
+        <div class="output-section" id="outputSection">
+          <div class="output-label">Result</div>
+          <div class="output-box" id="outputBox"></div>
+          <div class="stats" id="statsBar"></div>
+          <div class="output-actions">
+            <button class="btn-small" id="copyBtn" onclick="copyResult()">
+              Copy
+            </button>
+            <button class="btn-small" onclick="clearAll()">Clear</button>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Example phrases -->
+        <div class="examples-label">Try these</div>
+        <div class="example-chips" id="exampleChips"></div>
+      </div>
+
+      <footer>
+        Built with 💜 &nbsp;·&nbsp;
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
