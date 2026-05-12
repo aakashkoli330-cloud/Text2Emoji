@@ -1,75 +1,80 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emoji Translator ✨</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="logo-row">
-          <div class="logo">Emoji Translator</div>
-          <span class="logo-badge">v1.0</span>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Turn your words into expressive emojis instantly. Two modes: word-by-word translation and vibe/mood detection." />
+  <meta property="og:title" content="Emoji Translator" />
+  <meta property="og:description" content="Turn your words into expressive emojis instantly." />
+  <title>Emoji Translator</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✨%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-relevant="additions"></div>
+
+    <header class="header">
+      <div class="header-inner">
+        <div>
+          <h1 class="logo">Emoji Translator</h1>
+          <p class="tagline">Turn words into emojis <span class="tagline-emoji">✨</span></p>
         </div>
-        <p class="tagline">Turn your words into a world of emojis</p>
-      </header>
-
-      <div class="card">
-        <!-- Mode toggle -->
-        <div class="mode-row">
-          <span class="mode-label">Mode</span>
-          <div class="toggle-track" id="toggleTrack" onclick="toggleMode()">
-            <span class="toggle-opt">🔤 Word</span>
-            <span class="toggle-opt">🌈 Vibe</span>
-          </div>
-        </div>
-
-        <div class="mode-desc" id="modeDesc">
-          <span>Word Mode:</span> Each word is matched to its closest emoji.
-          Unmatched words stay as text.
-        </div>
-
-        <textarea
-          id="inputText"
-          placeholder="e.g. I love pizza and the sun…"
-        ></textarea>
-
-        <button
-          class="btn-translate"
-          id="translateBtn"
-          onclick="runTranslate()"
-        >
-          ✦ Translate
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode" type="button">
+          <span class="theme-icon" id="themeIcon">🌙</span>
         </button>
+      </div>
+    </header>
 
-        <!-- Output -->
-        <div class="output-section" id="outputSection">
-          <div class="output-label">Result</div>
-          <div class="output-box" id="outputBox"></div>
-          <div class="stats" id="statsBar"></div>
-          <div class="output-actions">
-            <button class="btn-small" id="copyBtn" onclick="copyResult()">
-              Copy
-            </button>
-            <button class="btn-small" onclick="clearAll()">Clear</button>
-          </div>
-        </div>
-
-        <hr class="divider" />
-
-        <!-- Example phrases -->
-        <div class="examples-label">Try these</div>
-        <div class="example-chips" id="exampleChips"></div>
+    <main class="card">
+      <div class="mode-switch" role="radiogroup" aria-label="Translation mode">
+        <button class="mode-btn active" role="radio" aria-checked="true" data-mode="word" id="modeWord" type="button">
+          <span class="mode-btn-icon">🔤</span> Word Mode
+        </button>
+        <button class="mode-btn" role="radio" aria-checked="false" data-mode="vibe" id="modeVibe" type="button">
+          <span class="mode-btn-icon">🌈</span> Vibe Mode
+        </button>
       </div>
 
-      <footer>
-        Built with 💜 &nbsp;·&nbsp;
-        <a href="https://github.com/" target="_blank">GitHub</a>
-      </footer>
-    </div>
+      <p class="mode-hint" id="modeHint">
+        Each word is matched to its closest emoji. Unmatched words stay as text.
+      </p>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="input-wrap">
+        <textarea id="inputText" placeholder="e.g. I love pizza and the sun…" aria-label="Text to translate" rows="4"></textarea>
+        <span class="char-count" id="charCount">0</span>
+      </div>
+
+      <button class="btn-primary" id="translateBtn" type="button">
+        <span class="btn-icon">✦</span> Translate
+      </button>
+
+      <div class="output-section" id="outputSection">
+        <div class="output-header">
+          <span class="output-label">Translation</span>
+          <span class="output-badge" id="outputBadge">Word Mode</span>
+        </div>
+        <div class="output-box" id="outputBox" role="status" aria-live="polite"></div>
+        <div class="stats" id="statsBar"></div>
+        <div class="output-actions">
+          <button class="btn-ghost" id="copyBtn" type="button">📋 Copy</button>
+          <button class="btn-ghost" id="clearBtn" type="button">🗑️ Clear</button>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <p class="section-label">Try these examples</p>
+      <div class="example-chips" id="exampleChips"></div>
+    </main>
+
+    <footer class="footer">
+      <span>Built with <span class="heart">💜</span></span>
+      <span class="footer-dot">·</span>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

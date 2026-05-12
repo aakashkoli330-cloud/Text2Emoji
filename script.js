@@ -275,240 +275,107 @@ const emojiMap = {
 // ─── MOOD MAP (vibe mode) ────────────────────────────────────────────────────
 const moodMap = [
   {
-    keywords: [
-      "love",
-      "heart",
-      "miss",
-      "dear",
-      "crush",
-      "romance",
-      "kiss",
-      "marry",
-      "date",
-    ],
+    keywords: ["love", "heart", "miss", "dear", "crush", "romance", "kiss", "marry", "date"],
     emojis: "❤️😍💕",
     label: "Romantic",
   },
   {
-    keywords: [
-      "happy",
-      "joy",
-      "fun",
-      "laugh",
-      "lol",
-      "yay",
-      "awesome",
-      "great",
-      "amazing",
-      "best",
-      "wonderful",
-      "excited",
-      "celebrate",
-      "party",
-    ],
+    keywords: ["happy", "joy", "fun", "laugh", "lol", "yay", "awesome", "great", "amazing", "best", "wonderful", "excited", "celebrate", "party"],
     emojis: "😄🎉✨",
     label: "Joyful",
   },
   {
-    keywords: [
-      "sad",
-      "cry",
-      "miss",
-      "alone",
-      "lonely",
-      "broken",
-      "hurt",
-      "pain",
-      "tears",
-      "unfortunate",
-    ],
+    keywords: ["sad", "cry", "miss", "alone", "lonely", "broken", "hurt", "pain", "tears", "unfortunate"],
     emojis: "😢💔🌧️",
     label: "Sad",
   },
   {
-    keywords: [
-      "angry",
-      "hate",
-      "mad",
-      "annoyed",
-      "frustrated",
-      "furious",
-      "rage",
-      "ugh",
-      "seriously",
-    ],
+    keywords: ["angry", "hate", "mad", "annoyed", "frustrated", "furious", "rage", "ugh", "seriously"],
     emojis: "😡🔥💢",
     label: "Angry",
   },
   {
-    keywords: [
-      "scared",
-      "fear",
-      "horror",
-      "dark",
-      "nightmare",
-      "ghost",
-      "spooky",
-      "danger",
-    ],
+    keywords: ["scared", "fear", "horror", "dark", "nightmare", "ghost", "spooky", "danger"],
     emojis: "😱👻🌑",
     label: "Spooky",
   },
   {
-    keywords: [
-      "hungry",
-      "eat",
-      "food",
-      "pizza",
-      "burger",
-      "cake",
-      "yum",
-      "delicious",
-      "restaurant",
-      "dinner",
-    ],
+    keywords: ["hungry", "eat", "food", "pizza", "burger", "cake", "yum", "delicious", "restaurant", "dinner"],
     emojis: "🍕😋🍔",
     label: "Foodie",
   },
   {
-    keywords: [
-      "tired",
-      "sleep",
-      "bed",
-      "rest",
-      "dream",
-      "night",
-      "lazy",
-      "exhausted",
-      "yawn",
-    ],
+    keywords: ["tired", "sleep", "bed", "rest", "dream", "night", "lazy", "exhausted", "yawn"],
     emojis: "😴💤🌙",
     label: "Sleepy",
   },
   {
-    keywords: [
-      "travel",
-      "trip",
-      "fly",
-      "adventure",
-      "explore",
-      "journey",
-      "vacation",
-      "holiday",
-      "plane",
-      "car",
-    ],
+    keywords: ["travel", "trip", "fly", "adventure", "explore", "journey", "vacation", "holiday", "plane", "car"],
     emojis: "✈️🌍🗺️",
     label: "Adventurous",
   },
   {
-    keywords: [
-      "work",
-      "study",
-      "school",
-      "office",
-      "project",
-      "deadline",
-      "meeting",
-      "boss",
-      "homework",
-    ],
+    keywords: ["work", "study", "school", "office", "project", "deadline", "meeting", "boss", "homework"],
     emojis: "💼📚😤",
     label: "Grind Mode",
   },
   {
-    keywords: [
-      "nature",
-      "sun",
-      "beach",
-      "ocean",
-      "mountain",
-      "forest",
-      "rain",
-      "flower",
-      "tree",
-      "earth",
-    ],
+    keywords: ["nature", "sun", "beach", "ocean", "mountain", "forest", "rain", "flower", "tree", "earth"],
     emojis: "🌿☀️🌊",
     label: "Nature Lover",
   },
   {
-    keywords: [
-      "music",
-      "song",
-      "dance",
-      "concert",
-      "guitar",
-      "piano",
-      "vibe",
-      "beat",
-      "rhythm",
-    ],
+    keywords: ["music", "song", "dance", "concert", "guitar", "piano", "vibe", "beat", "rhythm"],
     emojis: "🎵🎶💃",
     label: "Musical",
   },
   {
-    keywords: [
-      "money",
-      "rich",
-      "buy",
-      "shop",
-      "deal",
-      "invest",
-      "earn",
-      "expensive",
-      "cheap",
-    ],
+    keywords: ["money", "rich", "buy", "shop", "deal", "invest", "earn", "expensive", "cheap"],
     emojis: "💰🛍️💸",
     label: "Money Moves",
   },
   {
-    keywords: [
-      "cool",
-      "chill",
-      "relax",
-      "vibe",
-      "hang",
-      "friends",
-      "weekend",
-      "free",
-      "easy",
-    ],
+    keywords: ["cool", "chill", "relax", "vibe", "hang", "friends", "weekend", "free", "easy"],
     emojis: "😎🧊🎮",
     label: "Chill",
   },
   {
-    keywords: [
-      "sport",
-      "game",
-      "win",
-      "play",
-      "team",
-      "score",
-      "goal",
-      "champion",
-      "compete",
-    ],
+    keywords: ["sport", "game", "win", "play", "team", "score", "goal", "champion", "compete"],
     emojis: "🏆⚽💪",
     label: "Sporty",
   },
   {
-    keywords: [
-      "think",
-      "idea",
-      "plan",
-      "create",
-      "build",
-      "invent",
-      "design",
-      "learn",
-      "smart",
-      "genius",
-    ],
+    keywords: ["think", "idea", "plan", "create", "build", "invent", "design", "learn", "smart", "genius"],
     emojis: "💡🧠🔮",
     label: "Big Brain",
   },
 ];
+
+// ─── IRREGULAR WORD MAP ──────────────────────────────────────────────────────
+const irregularWords = {
+  ran: "run", ate: "eat", flew: "fly", swam: "swim", sang: "sing",
+  wrote: "write", drove: "drive", rode: "ride", gave: "give",
+  took: "take", broke: "break", spoke: "speak", wore: "wear",
+  chose: "choose", froze: "freeze", woke: "wake", threw: "throw",
+  grew: "grow", knew: "know", blew: "blow", drew: "draw",
+  began: "begin", drank: "drink", rang: "ring", sank: "sink",
+  sat: "sit", slept: "sleep", felt: "feel", kept: "keep",
+  left: "leave", meant: "mean", sent: "send", spent: "spend",
+  built: "build", lent: "lend", bent: "bend", lost: "lose",
+  shot: "shoot", got: "get", forgot: "forget", bought: "buy",
+  fought: "fight", thought: "think", brought: "bring", caught: "catch",
+  taught: "teach", told: "tell", sold: "sell", held: "hold",
+  found: "find", stood: "stand", understood: "understand", won: "win",
+  hid: "hide", bit: "bite", hid: "hide", hit: "hit",
+  hurt: "hurt", let: "let", put: "put", set: "set",
+  shut: "shut", cut: "cut", cost: "cost", bet: "bet",
+  men: "man", women: "woman", children: "child", people: "person",
+  feet: "foot", teeth: "tooth", mice: "mouse", geese: "goose",
+  lives: "life", knives: "knife", wolves: "wolf", wives: "wife",
+  shelves: "shelf", leaves: "leaf", halves: "half",
+  better: "good", best: "good", worse: "bad", worst: "bad",
+  more: "many", most: "many",
+};
 
 // ─── STATE ───────────────────────────────────────────────────────────────────
 let isVibe = false;
@@ -523,139 +390,355 @@ const examples = [
   "I hate Mondays but love coffee",
 ];
 
-// ─── INIT ────────────────────────────────────────────────────────────────────
-window.onload = () => {
-  const chips = document.getElementById("exampleChips");
-  examples.forEach((ex) => {
-    const c = document.createElement("div");
-    c.className = "chip";
-    c.textContent = ex;
-    c.onclick = () => {
-      document.getElementById("inputText").value = ex;
-      runTranslate();
-    };
-    chips.appendChild(c);
-  });
+// ─── DOM REFS ────────────────────────────────────────────────────────────────
+const $ = (id) => document.getElementById(id);
 
-  document.getElementById("inputText").addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      runTranslate();
-    }
-  });
-};
+// ─── STEMMER ─────────────────────────────────────────────────────────────────
+function stem(word) {
+  if (word.length < 3) return word;
 
-// ─── MODE TOGGLE ─────────────────────────────────────────────────────────────
-function toggleMode() {
-  isVibe = !isVibe;
-  const track = document.getElementById("toggleTrack");
-  const btn = document.getElementById("translateBtn");
-  const desc = document.getElementById("modeDesc");
+  let w = word;
 
-  track.classList.toggle("vibe", isVibe);
-  btn.classList.toggle("vibe-btn", isVibe);
+  if (w.endsWith("ing")) {
+    w = w.slice(0, -3);
+    if (w.length >= 2 && w[w.length - 1] === w[w.length - 2]) w = w.slice(0, -1);
+    return w;
+  }
 
-  desc.innerHTML = isVibe
-    ? `<span>Vibe Mode:</span> Reads the overall mood of your sentence and returns a feeling in emojis.`
-    : `<span>Word Mode:</span> Each word is matched to its closest emoji. Unmatched words stay as text.`;
+  if (w.endsWith("tion") && w.length > 5) return w.slice(0, -4);
+
+  if (w.endsWith("ment") && w.length > 5) return w.slice(0, -4);
+
+  if (w.endsWith("ness") && w.length > 5) {
+    w = w.slice(0, -4);
+    if (w.endsWith("i")) w = w.slice(0, -1) + "y";
+    return w;
+  }
+
+  if ((w.endsWith("able") || w.endsWith("ible")) && w.length > 6) return w.slice(0, -4);
+
+  if (w.endsWith("ed") && w.length > 3) {
+    w = w.slice(0, -2);
+    if (w.endsWith("i")) w = w.slice(0, -1) + "y";
+    if (w.length >= 2 && w[w.length - 1] === w[w.length - 2]) w = w.slice(0, -1);
+    return w;
+  }
+
+  if (w.endsWith("es") && w.length > 3) {
+    w = w.slice(0, -2);
+    if (w.endsWith("i")) w = w.slice(0, -1) + "y";
+    return w;
+  }
+
+  if (w.endsWith("s") && !w.endsWith("ss") && w.length > 3) {
+    w = w.slice(0, -1);
+    if (w.endsWith("i")) w = w.slice(0, -1) + "y";
+    return w;
+  }
+
+  if (w.endsWith("ly") && w.length > 4) {
+    w = w.slice(0, -2);
+    if (w.endsWith("i")) w = w.slice(0, -1) + "y";
+    return w;
+  }
+
+  if (w.endsWith("er") && w.length > 4) {
+    w = w.slice(0, -2);
+    if (w.endsWith("i")) w = w.slice(0, -1) + "y";
+    if (w.length >= 2 && w[w.length - 1] === w[w.length - 2]) w = w.slice(0, -1);
+    return w;
+  }
+
+  if (w.endsWith("est") && w.length > 5) {
+    w = w.slice(0, -3);
+    if (w.endsWith("i")) w = w.slice(0, -1) + "y";
+    if (w.length >= 2 && w[w.length - 1] === w[w.length - 2]) w = w.slice(0, -1);
+    return w;
+  }
+
+  return w;
+}
+
+// ─── EMOJI LOOKUP (with fuzzy matching) ─────────────────────────────────────
+function lookupEmoji(word) {
+  const clean = word.replace(/[^a-zA-Z]/g, "").toLowerCase();
+  if (!clean) return null;
+
+  // Collect candidate forms to try
+  const candidates = [clean];
+
+  if (irregularWords[clean]) candidates.push(irregularWords[clean]);
+
+  const stemmed = stem(clean);
+  if (stemmed !== clean) {
+    candidates.push(stemmed);
+    if (!stemmed.endsWith("e")) candidates.push(stemmed + "e");
+  }
+
+  for (const c of candidates) {
+    if (emojiMap[c]) return emojiMap[c];
+  }
+
+  return null;
+}
+
+// ─── TOAST ───────────────────────────────────────────────────────────────────
+function showToast(message, icon = "✅") {
+  const container = $("toastContainer");
+  const toast = document.createElement("div");
+  toast.className = "toast";
+  toast.innerHTML = `<span>${icon}</span> ${escapeHtml(message)}`;
+  container.appendChild(toast);
+  setTimeout(() => {
+    toast.classList.add("removing");
+    toast.addEventListener("animationend", () => toast.remove());
+  }, 2500);
+}
+
+function escapeHtml(str) {
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// ─── CLIPBOARD ───────────────────────────────────────────────────────────────
+function copyToClipboard(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+  } else {
+    fallbackCopy(text);
+  }
+}
+
+function fallbackCopy(text) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  ta.style.pointerEvents = "none";
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand("copy"); } catch {}
+  document.body.removeChild(ta);
+}
+
+// ─── PREPARE MOOD KEYWORDS ───────────────────────────────────────────────────
+const preparedMoods = moodMap.map((mood) => ({
+  ...mood,
+  stemmed: mood.keywords.map((k) => stem(k.toLowerCase())),
+}));
+
+// ─── THEME ───────────────────────────────────────────────────────────────────
+function getPreferredTheme() {
+  try {
+    const stored = localStorage.getItem("theme");
+    if (stored) return stored;
+  } catch {}
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  try { localStorage.setItem("theme", theme); } catch {}
+  const icon = $("themeIcon");
+  icon.textContent = theme === "dark" ? "☀️" : "🌙";
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute("data-theme");
+  const next = current === "dark" ? "light" : "dark";
+  setTheme(next);
+  showToast(next === "dark" ? "Dark mode activated" : "Light mode activated", next === "dark" ? "🌙" : "☀️");
+}
+
+// ─── MODE ────────────────────────────────────────────────────────────────────
+function switchMode(vibe) {
+  isVibe = vibe;
+  const wordBtn = $("modeWord");
+  const vibeBtn = $("modeVibe");
+
+  wordBtn.classList.toggle("active", !vibe);
+  wordBtn.setAttribute("aria-checked", !vibe);
+  vibeBtn.classList.toggle("active", vibe);
+  vibeBtn.setAttribute("aria-checked", vibe);
+
+  $("modeHint").textContent = vibe
+    ? "Reads the overall mood of your sentence and returns emojis that capture the feeling."
+    : "Each word is matched to its closest emoji. Unmatched words stay as text.";
 
   if (lastResult) runTranslate();
 }
 
 // ─── TRANSLATE ───────────────────────────────────────────────────────────────
 function runTranslate() {
-  const raw = document.getElementById("inputText").value.trim();
-  if (!raw) return;
+  const raw = $("inputText").value.trim();
+  if (!raw) {
+    showToast("Enter some text to translate", "✏️");
+    return;
+  }
 
-  const outputBox = document.getElementById("outputBox");
-  const statsBar = document.getElementById("statsBar");
+  const outputBox = $("outputBox");
+  const statsBar = $("statsBar");
+  const badge = $("outputBadge");
 
   if (!isVibe) {
-    // ── Word-by-word mode ──
+    badge.textContent = "Word Mode";
     const tokens = raw.split(/(\s+)/);
-    let matched = 0,
-      total = 0;
+    let matched = 0;
+    let total = 0;
+    let html = "";
 
-    const parts = tokens.map((tok) => {
-      if (/^\s+$/.test(tok)) return `<span class="token-space"> </span>`;
+    tokens.forEach((tok, i) => {
+      if (/^\s+$/.test(tok)) {
+        html += " ";
+        return;
+      }
       const clean = tok.replace(/[^a-zA-Z]/g, "").toLowerCase();
       const punct = tok.replace(/[a-zA-Z]/g, "");
       total++;
-      if (emojiMap[clean]) {
+
+      const emoji = lookupEmoji(clean);
+      if (emoji) {
         matched++;
-        return `<span class="token-emoji">${emojiMap[clean]}${punct}</span>`;
+        html += `<span class="token-emoji" style="animation-delay:${(i * 0.04).toFixed(2)}s">${emoji}${escapeHtml(punct)}</span>`;
+      } else {
+        html += `<span class="token-word">${escapeHtml(tok)}</span>`;
       }
-      return `<span class="token-word">${tok}</span>`;
     });
 
     outputBox.className = "output-box";
-    outputBox.innerHTML = parts.join("");
-    statsBar.innerHTML = `<span class="stat"><b>${matched}</b> / ${total} words matched</span>
-                           <span class="stat"><b>${Math.round((matched / total) * 100) || 0}%</b> emoji coverage</span>`;
+    outputBox.innerHTML = html || escapeHtml(raw);
+
+    statsBar.innerHTML = `
+      <span class="stat"><strong>${matched}</strong> / ${total} words matched</span>
+      <span class="stat"><strong>${Math.round((matched / total) * 100) || 0}%</strong> coverage</span>
+    `;
   } else {
-    // ── Vibe mode ──
+    badge.textContent = "Vibe Mode";
     const words = raw
       .toLowerCase()
       .replace(/[^a-z\s]/g, "")
-      .split(/\s+/);
-    let bestMood = null,
-      bestScore = 0;
+      .split(/\s+/)
+      .filter(Boolean);
 
-    for (const mood of moodMap) {
-      const score = mood.keywords.filter((k) => words.includes(k)).length;
+    const wordStems = words.map((w) => stem(w));
+    let bestMood = null;
+    let bestScore = 0;
+    let secondMood = null;
+    let secondScore = 0;
+
+    for (const mood of preparedMoods) {
+      let score = 0;
+      for (let i = 0; i < words.length; i++) {
+        if (mood.keywords.includes(words[i])) {
+          score += 3;
+        } else if (mood.stemmed.includes(wordStems[i])) {
+          score += 2;
+        } else if (mood.keywords.some((k) => words[i].startsWith(k) || k.startsWith(words[i]))) {
+          score += 1;
+        }
+      }
+
       if (score > bestScore) {
+        secondScore = bestScore;
+        secondMood = bestMood;
         bestScore = score;
         bestMood = mood;
+      } else if (score > secondScore) {
+        secondScore = score;
+        secondMood = mood;
       }
     }
 
     outputBox.className = "output-box vibe-output";
 
     if (!bestMood || bestScore === 0) {
-      // Fallback: collect unique emojis from word map
       const found = [];
       words.forEach((w) => {
-        if (emojiMap[w] && !found.includes(emojiMap[w]))
-          found.push(emojiMap[w]);
+        const e = lookupEmoji(w);
+        if (e && !found.includes(e)) found.push(e);
       });
       outputBox.innerHTML =
-        (found.length ? found.slice(0, 6).join(" ") : "🤷") +
-        `<div class="vibe-mood-label">Mixed / Neutral vibes</div>`;
+        (found.length
+          ? found.slice(0, 6).map((e, i) => `<span class="vibe-emoji" style="animation-delay:${(i * 0.1).toFixed(2)}s">${e}</span>`).join(" ")
+          : "🤷") +
+        `<div class="vibe-mood-label">Mixed vibes</div>`;
+      statsBar.innerHTML = `<span class="stat"><strong>${found.length}</strong> emojis found</span>`;
     } else {
+      const emojiChars = bestMood.emojis.split("");
       outputBox.innerHTML =
-        bestMood.emojis
-          .split("")
-          .map((e) => `<span>${e}</span>`)
+        emojiChars
+          .map((e, i) => `<span class="vibe-emoji" style="animation-delay:${(i * 0.12).toFixed(2)}s">${e}</span>`)
           .join(" ") +
-        `<div class="vibe-mood-label">Mood detected: <strong>${bestMood.label}</strong></div>`;
+        `<div class="vibe-mood-label">Feeling <strong>${escapeHtml(bestMood.label)}</strong>${secondMood && secondScore >= bestScore * 0.6 ? ` · also <strong>${escapeHtml(secondMood.label)}</strong>` : ""}</div>`;
+      statsBar.innerHTML = `<span class="stat">Mood score: <strong>${bestScore}</strong></span>`;
     }
-
-    statsBar.innerHTML = `<span class="stat">Keyword matches: <b>${bestScore}</b></span>`;
   }
 
   lastResult = raw;
-  document.getElementById("outputSection").classList.add("visible");
-  document.getElementById("copyBtn").classList.remove("copied");
-  document.getElementById("copyBtn").textContent = "📋 Copy";
+  $("outputSection").classList.add("visible");
+  const copyBtn = $("copyBtn");
+  copyBtn.classList.remove("copied");
+  copyBtn.innerHTML = "📋 Copy";
 }
 
 // ─── COPY ────────────────────────────────────────────────────────────────────
 function copyResult() {
-  const text = document.getElementById("outputBox").innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = document.getElementById("copyBtn");
-    btn.textContent = "✅ Copied!";
-    btn.classList.add("copied");
-    setTimeout(() => {
-      btn.textContent = "📋 Copy";
-      btn.classList.remove("copied");
-    }, 2000);
-  });
+  const text = $("outputBox").innerText;
+  copyToClipboard(text);
+  const btn = $("copyBtn");
+  btn.innerHTML = "✅ Copied!";
+  btn.classList.add("copied");
+  showToast("Copied to clipboard", "📋");
 }
 
 // ─── CLEAR ───────────────────────────────────────────────────────────────────
 function clearAll() {
-  document.getElementById("inputText").value = "";
-  document.getElementById("outputSection").classList.remove("visible");
+  $("inputText").value = "";
+  $("outputSection").classList.remove("visible");
+  $("charCount").textContent = "0";
   lastResult = "";
+  showToast("Cleared", "🗑️");
 }
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+document.addEventListener("DOMContentLoaded", () => {
+  setTheme(getPreferredTheme());
+
+  // Populate example chips
+  const chips = $("exampleChips");
+  examples.forEach((ex) => {
+    const c = document.createElement("button");
+    c.className = "chip";
+    c.textContent = ex;
+    c.type = "button";
+    c.addEventListener("click", () => {
+      $("inputText").value = ex;
+      $("charCount").textContent = ex.length;
+      runTranslate();
+    });
+    chips.appendChild(c);
+  });
+
+  // Events
+  $("themeToggle").addEventListener("click", toggleTheme);
+
+  $("modeWord").addEventListener("click", () => switchMode(false));
+  $("modeVibe").addEventListener("click", () => switchMode(true));
+
+  $("translateBtn").addEventListener("click", runTranslate);
+
+  $("inputText").addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      runTranslate();
+    }
+  });
+
+  $("inputText").addEventListener("input", () => {
+    $("charCount").textContent = $("inputText").value.length;
+  });
+
+  $("copyBtn").addEventListener("click", copyResult);
+  $("clearBtn").addEventListener("click", clearAll);
+});
